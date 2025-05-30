@@ -1,6 +1,6 @@
-'use client';
-import './globals.css';
-import React, { useState } from 'react';
+"use client";
+
+import React, { useState } from "react";
 import {
   FaPhoneAlt,
   FaLinkedinIn,
@@ -8,14 +8,12 @@ import {
   FaInstagram,
   FaBars,
   FaTimes,
-} from 'react-icons/fa';
+} from "react-icons/fa";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <html>
-      <body>
     <header className="w-full">
       {/* Top bar */}
       <div className="bg-[#0c1525] text-white text-sm flex justify-between items-center px-4 py-2">
@@ -24,9 +22,15 @@ const Navbar = () => {
           <span>03453777766</span>
         </div>
         <div className="flex space-x-4">
-          <a href="#"><FaLinkedinIn /></a>
-          <a href="#"><FaFacebookF /></a>
-          <a href="#"><FaInstagram /></a>
+          <a href="#">
+            <FaLinkedinIn />
+          </a>
+          <a href="#">
+            <FaFacebookF />
+          </a>
+          <a href="#">
+            <FaInstagram />
+          </a>
         </div>
       </div>
 
@@ -38,16 +42,34 @@ const Navbar = () => {
             <img src="/logo.png" alt="Pak Bioenergy" className="h-10" />
             <div>
               <h1 className="text-lg font-bold">PAK BIOENERGY</h1>
-              <p className="text-xs text-gray-600">Clean Heat Energy Solutions</p>
+              <p className="text-xs text-gray-600">
+                Clean Heat Energy Solutions
+              </p>
             </div>
           </a>
 
           {/* Desktop menu */}
           <ul className="hidden md:flex space-x-8 font-medium">
-            <li><a href="/about-us" className="hover:text-green-600">About Us</a></li>
-            <li><a href="/products" className="hover:text-green-600">Products</a></li>
-            <li><a href="/renewable-energy" className="hover:text-green-600">Renewable Energy</a></li>
-            <li><a href="/contact-us" className="hover:text-green-600">Contact Us</a></li>
+            <li>
+              <a href="/about-us" className="hover:text-green-600">
+                About Us
+              </a>
+            </li>
+            <li>
+              <a href="/products" className="hover:text-green-600">
+                Products
+              </a>
+            </li>
+            <li>
+              <a href="/renewable-energy" className="hover:text-green-600">
+                Renewable Energy
+              </a>
+            </li>
+            <li>
+              <a href="/contact-us" className="hover:text-green-600">
+                Contact Us
+              </a>
+            </li>
           </ul>
 
           {/* Mobile menu toggle */}
@@ -61,18 +83,32 @@ const Navbar = () => {
         {/* Mobile Menu - Always render, just toggle visibility */}
         <ul
           className={`md:hidden px-4 pb-4 space-y-2 font-medium transition-all duration-300 ease-in-out ${
-            menuOpen ? 'block' : 'hidden'
+            menuOpen ? "block" : "hidden"
           }`}
         >
-          <li><a href="/about-us" className="block hover:text-green-600">About Us</a></li>
-          <li><a href="/products" className="block hover:text-green-600">Products</a></li>
-          <li><a href="/renewable-energy" className="block hover:text-green-600">Renewable Energy</a></li>
-          <li><a href="/contact-us" className="block hover:text-green-600">Contact Us</a></li>
+          <li>
+            <a href="/about-us" className="block hover:text-green-600">
+              About Us
+            </a>
+          </li>
+          <li>
+            <a href="/products" className="block hover:text-green-600">
+              Products
+            </a>
+          </li>
+          <li>
+            <a href="/renewable-energy" className="block hover:text-green-600">
+              Renewable Energy
+            </a>
+          </li>
+          <li>
+            <a href="/contact-us" className="block hover:text-green-600">
+              Contact Us
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
-    </body>
-    </html>
   );
 };
 
