@@ -1,8 +1,6 @@
-
-
-'use client';
-import Image from 'next/image';
-import { ArrowRight } from 'lucide-react';
+"use client";
+import Image from "next/image";
+import { ArrowRight } from "lucide-react";
 
 const SustainableEnergy = () => {
   return (
@@ -24,7 +22,9 @@ const SustainableEnergy = () => {
                 width={100}
                 height={100}
               />
-              <p className="text-green-600 font-semibold mt-4">Energy in world</p>
+              <p className="text-green-600 font-semibold mt-4">
+                Energy in world
+              </p>
             </div>
 
             {/* Card 2 */}
@@ -78,9 +78,15 @@ const SustainableEnergy = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {[
-            { title: 'DOMESTIC STOVES', image: '/images/Domestic Stove.jpg' },
-            { title: 'COMMERCIAL BURNERS', image: '/images/commercial burners.jpg' },
-            { title: 'INDUSTRIAL BURNERS', image: '/images/industrial-burner.jpg' },
+            { title: "DOMESTIC STOVES", image: "/images/Domestic Stove.jpg" },
+            {
+              title: "COMMERCIAL BURNERS",
+              image: "/images/commercial burners.png",
+            },
+            {
+              title: "INDUSTRIAL BURNERS",
+              image: "/images/ind burner.jpg",
+            },
           ].map((item, idx) => (
             <div
               key={idx}
@@ -93,8 +99,10 @@ const SustainableEnergy = () => {
                 height={400}
                 className="w-full h-64 object-cover transition-transform group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-end p-6">
-                <h3 className="text-white text-lg font-bold mb-2">{item.title}</h3>
+              <div className="absolute inset-0 bg-black/30 bg-opacity-30 flex flex-col justify-end p-6">
+                <h3 className="text-white text-lg font-bold mb-2">
+                  {item.title}
+                </h3>
                 <button className="text-white font-medium flex items-center gap-2 group-hover:underline">
                   MORE <ArrowRight size={16} />
                 </button>
