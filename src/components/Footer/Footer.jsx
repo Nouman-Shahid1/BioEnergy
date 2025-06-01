@@ -17,7 +17,7 @@ const Footer = () => {
         {/* Background Overlay */}
         <div
           className="absolute inset-0 bg-cover bg-center opacity-10"
-          style={{ backgroundImage: 'url("/images/image 2.png")' }}
+          style={{ backgroundImage: 'url("/images/image2.png")' }}
         ></div>
 
         <div className="relative z-10 container mx-auto">

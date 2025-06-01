@@ -11,7 +11,7 @@ const EnergySection = () => {
           {/* Image */}
           <div className="w-full h-auto rounded-lg overflow-hidden shadow-lg hover:scale-105 transition-transform duration-500 ease-in-out">
             <img
-              src="/images/image 2.png"
+              src="/images/image2.png"
               alt="Using Organic Waste"
               className="w-full h-full object-cover"
             />
@@ -46,10 +46,15 @@ const EnergySection = () => {
               Premium Pellets
             </h2>
             <p className="text-gray-700 text-lg mb-8 max-w-xl leading-relaxed">
-              Wood Pellets are a type of solid fuel made from compressed organic
-              material like sawdust and agricultural wastes. Categorized by
-              heating value, moisture, ash content, and size, they are ideal for
-              power generation, commercial or residential heating, and cooking.
+              Woodi Pellets stand at the forefront of renewable energy
+              solutions. Made from 100% renewable resources, they are designed
+              to offer a sustainable alternative to conventional fuels. With
+              their high energy density, Woodi Pellets provide maximum
+              efficiency, ensuring that users gain more energy per unit. Coupled
+              with their low moisture content, these pellets ensure a cleaner
+              burn, which contributes to lower emissions and a healthier
+              environment. This slide will delve into the unique features that
+              make Woodi Pellets an exceptional choice for energy consumption
             </p>
             <button className="bg-green-600 hover:bg-green-700 text-white font-semibold px-8 py-3 rounded-lg shadow-md transition duration-300 ease-in-out focus:outline-none focus:ring-4 focus:ring-green-300">
               Learn More

@@ -18,7 +18,7 @@ const SustainableSection = () => {
     <section className="relative w-full h-[500px]">
       {/* Background Image */}
       <img
-        src="/images/image 2.png" // ✅ Place the uploaded image in /public/images/
+        src="/images/image2.png" // ✅ Place the uploaded image in /public/images/
         alt="Sustainable"
         className="absolute inset-0 w-full h-full object-cover"
       />
