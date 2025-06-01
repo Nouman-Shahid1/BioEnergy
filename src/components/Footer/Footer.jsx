@@ -276,16 +276,17 @@ import {
 
 const Footer = () => {
   return (
-    <div className="flex flex-col min-h-screen">
-      <div className="flex-grow">
-        {/* Placeholder for main content */}
-        <div className="bg-gray-100 min-h-[80vh] flex items-center justify-center">
+    <>
+    {/* <div className="flex flex-col min-h-screen"> */}
+      {/* <div className="flex-grow">
+        Placeholder for main content 
+         <div className="bg-gray-100 min-h-[80vh] flex items-center justify-center">
           <div className="text-center">
             <h1 className="text-4xl font-bold mb-4">Website Content</h1>
             <p className="text-lg">Scroll down to see the footer</p>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <footer className="relative bg-[#003300] text-white pt-16 pb-8 px-4 md:px-8 lg:px-16 overflow-hidden">
         {/* Background Overlay */}
@@ -299,9 +300,10 @@ const Footer = () => {
             {/* Section 1: Company Info */}
             <div className="space-y-4">
               <div className="flex items-center">
-                <span className="text-2xl font-bold">PAK BIOENERGY</span>
+                <span className="text-2xl font-bold">SINDH BIOENERGY</span>
               </div>
-              <p className="text-[#a3c93c] font-medium">Clean Heat Energy Solutions</p>
+              <p className="text-[#a3c93c] font-medium">Clean and Cost-Effective Energy Solution
+</p>
               <p className="text-sm max-w-xs">
                 Fulfilling your heat energy demand reliably and efficiently
               </p>
@@ -311,7 +313,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center text-sm mt-2">
                 <FaPhoneAlt className="mr-2" />
-                <span>03453777766</span>
+                <span>+92 3003316071</span>
               </div>
               <div className="flex items-center text-sm mt-2">
                 <FaEnvelope className="mr-2" />
@@ -402,10 +404,11 @@ const Footer = () => {
       {/* Black Copyright Bar */}
       <div className="bg-black text-white text-center py-4">
         <div className="container mx-auto">
-          <p className="text-sm">© 2023. All rights reserved. Pak Bioenergy</p>
+          <p className="text-sm">© 2023. All rights reserved. Sindh Bioenergy</p>
         </div>
       </div>
-    </div>
+    {/* </div> */}
+    </>
   );
 };
 

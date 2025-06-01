@@ -19,7 +19,7 @@ const Navbar = () => {
       <div className="bg-[#0c1525] text-white text-sm flex justify-between items-center px-4 md:px-8 py-2">
         <div className="flex items-center space-x-2">
           <FaPhoneAlt />
-          <span>03453777766</span>
+          <span>+92 3003316071</span>
         </div>
         <div className="flex space-x-4">
           <a href="#">
@@ -45,8 +45,9 @@ const Navbar = () => {
     className="h-16 w-auto"
   />
   <div className="leading-tight">
-    <h1 className="text-xl font-bold text-black">PAK BIOENERGY</h1>
-    <p className="text-sm text-gray-700">Clean Heat Energy Solutions</p>
+    <h1 className="text-xl font-bold text-black">SINDH BIOENERGY</h1>
+    <p className="text-sm text-gray-700">Clean and Cost-Effective Energy Solution
+</p>
   </div>
 </a>
 
