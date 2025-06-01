@@ -33,7 +33,7 @@ const Navbar = () => {
       <div className="bg-[#0c1525] text-white text-sm flex justify-between items-center px-4 md:px-8 py-2">
         <div className="flex items-center space-x-2">
           <FaPhoneAlt />
-          <span>03453777766</span>
+          <span>+92 3003316071</span>
         </div>
         <div className="flex space-x-4">
           <a href="#">

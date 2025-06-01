@@ -25,7 +25,7 @@ const Footer = () => {
             {/* Section 1: Company Info */}
             <div className="space-y-4">
               <div className="flex items-center">
-                <span className="text-2xl font-bold">PAK BIOENERGY</span>
+                <span className="text-2xl font-bold">SINDH BIOENERGY</span>
               </div>
               <p className="text-[#a3c93c] font-medium">
                 Clean Heat Energy Solutions
@@ -42,7 +42,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center text-sm mt-2">
                 <FaPhoneAlt className="mr-2" />
-                <span>03453777766</span>
+                <span>+92 3003316071</span>
               </div>
               <div className="flex items-center text-sm mt-2">
                 <FaEnvelope className="mr-2" />
@@ -151,7 +151,7 @@ const Footer = () => {
       {/* Black Copyright Bar */}
       <div className="bg-black text-white text-center py-4">
         <div className="container mx-auto">
-          <p className="text-sm">© 2023. All rights reserved. Pak Bioenergy</p>
+          <p className="text-sm">© 2023. All rights reserved. Sindh Bioenergy</p>
         </div>
       </div>
     </>
