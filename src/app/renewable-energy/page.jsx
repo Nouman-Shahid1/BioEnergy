@@ -1,6 +1,19 @@
 "use client";
 import Footer from "@/components/Footer/Footer";
 import React from "react";
+import { Economica, Poppins, Oxygen } from "next/font/google";
+
+const oxygen = Oxygen({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400"],
+});
+
+const economica = Economica({ subsets: ["latin"], weight: ["400", "700"] });
 
 // Main Home component
 const Home = () => {
@@ -8,21 +21,23 @@ const Home = () => {
     <div className="font-inter antialiased text-gray-800 bg-white">
       {/* Hero Section */}
       <section
-        className="relative min-h-screen bg-cover bg-center flex items-center justify-center text-white"
+        className="relative min-h-screen bg-cover bg-center flex items-center justify-center text-white "
         style={{
           backgroundImage:
             "url('https://bioenergy.com.pk/wp-content/uploads/2023/10/C-scaled.webp')",
         }}
       >
         {/* Overlay */}
-        <div className="absolute inset-0 "></div>
+        <div className="absolute inset-0 bg-black/60"></div>
 
         {/* Hero Content */}
-        <div className="relative z-10 text-center p-4">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
+        <div className="relative z-10 text-center p-4 ">
+          <h1
+            className={`text-[113.611px] leading-[113.611px] text-white uppercase text-center tracking-tight font-bold ${economica.className}`}
+          >
             RENEWABLE ENERGY
           </h1>
-          <p className="text-xl">Helping World To Grow Sustainably</p>
+          {/* <p className="text-xl">Helping World To Grow Sustainably</p> */}
         </div>
       </section>
 

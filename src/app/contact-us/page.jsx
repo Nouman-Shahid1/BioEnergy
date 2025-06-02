@@ -1,8 +1,22 @@
 "use client";
 import React from "react";
 import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
-
 import Footer from "@/components/Footer/Footer";
+import { Economica, Poppins, Oxygen } from "next/font/google";
+
+
+
+const oxygen = Oxygen({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400"],
+});
+
+const economica = Economica({ subsets: ['latin'], weight: ['400', '700'] });
 
 const ContactPage = () => {
   return (
@@ -23,7 +37,10 @@ const ContactPage = () => {
   <div className="absolute inset-0 bg-black/60 z-0"></div>
 
   {/* Text */}
-  <h1 className="relative z-10">CONTACT US</h1>
+  <h1 
+  className={`text-[113.611px] leading-[113.611px] text-white uppercase text-center tracking-tight font-bold relative z-10 ${economica.className}`}>
+  
+    CONTACT US</h1>
 </section>
 
 

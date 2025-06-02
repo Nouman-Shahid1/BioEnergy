@@ -4,23 +4,39 @@ import React from "react";
 import Footer from "@/components/Footer/Footer";
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
+import { Economica, Poppins, Oxygen } from "next/font/google";
+
+const oxygen = Oxygen({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400"],
+});
+
+const economica = Economica({ subsets: ["latin"], weight: ["400", "700"] });
 
 const ProductPage = () => {
   return (
     <div className="min-h-screen bg-gray-50 font-inter">
       {/* Hero Section */}
       <section
-  className="relative h-[600px] bg-cover bg-center z-10"
-  style={{
-    backgroundImage: "url('/images/product.png')",
-  }}
->
-  <div className="absolute inset-0 flex items-center justify-center">
-    <h1 className="text-5xl md:text-6xl font-bold text-white tracking-wider uppercase">
-      PRODUCTS
-    </h1>
-  </div>
-</section>
+        className="relative h-[600px] bg-cover bg-center z-10"
+        style={{
+          backgroundImage: "url('/images/product.png')",
+        }}
+      >
+        <div className="absolute inset-0 bg-black/60"></div>
+        <div className="absolute inset-0 flex items-center justify-center">
+          <h1
+            className={`text-[113.611px] leading-[113.611px] text-white uppercase text-center tracking-tight font-bold ${economica.className}`}
+          >
+            PRODUCTS
+          </h1>
+        </div>
+      </section>
 
       {/* Premium Pellets Section */}
       <section className="container mx-auto px-4 py-16 md:py-24">
