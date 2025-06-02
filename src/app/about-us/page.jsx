@@ -69,17 +69,24 @@ const AboutPage = () => {
             <div className="relative mb-6">
               <span className="block w-14 h-1 bg-green-500 rounded-sm mb-2"></span>
             </div>
-            <p
+            {/* <p
               className={`text-gray-800 text-justify leading-relaxed mb-6 ${poppins.className}`}
             >
-              We are the mass producer of biomass fuels. We are specialized in
-              biomass pellet making and manufacturing of domestic stoves,
-              commercial and industrial burners...
-            </p>
-            <p className="text-gray-800 text-justify leading-relaxed">
+              Sindh Bio Energy is committed to providing environmentally
+              friendly and cost-effective energy solutions through high-quality
+              wood pellets, reducing reliance on fossil fuels, and promoting a
+              cleaner, greener future. We strive to be a leading provider of
+              biomass energy solutions, recognized for our commitment to
+              environmental stewardship, quality, and customer satisfaction.
+            </p> */}
+            <p className={`text-gray-800 text-left leading-normal mb-4 ${poppins.className}`}>
+  Sindh Bio Energy is committed to providing environmentally friendly and cost-effective energy solutions through high-quality wood pellets, reducing reliance on fossil fuels, and promoting a cleaner, greener future. We strive to be a leading provider of biomass energy solutions, recognized for our commitment to environmental stewardship, quality, and customer satisfaction.
+</p>
+
+            {/* <p className="text-gray-800 text-justify leading-relaxed">
               The world is committing to an ambitious reduction in carbon
               emissions...
-            </p>
+            </p> */}
           </div>
 
           <div className="flex justify-center">
@@ -117,7 +124,7 @@ const AboutPage = () => {
         </div>
       </section>
 
-      <section className="w-full bg-white py-12 mt-16 px-6 md:px-16">
+      <section className="w-full bg-white py-12 mt-0 px-6 md:px-16">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-stretch gap-10">
           <div className="w-full md:w-1/2 flex-shrink-0">
             <div className="relative w-full h-full min-h-[400px]">
@@ -160,7 +167,7 @@ const AboutPage = () => {
         </div>
       </section>
 
-      <section className="w-full bg-white py-12 mt-16 px-6 md:px-16">
+      <section className="w-full bg-white py-12 mt-0 px-6 md:px-16">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-10">
           <div className="w-full md:w-1/2 flex items-center">
             <div>

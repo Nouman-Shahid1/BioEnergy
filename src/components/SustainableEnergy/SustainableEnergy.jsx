@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 
@@ -17,7 +18,7 @@ const SustainableEnergy = () => {
             {/* Card 1 */}
             <div className="flex flex-col items-center hover:scale-105 transition-transform">
               <Image
-                src="/images/Heat Energy.png"
+                src="/images/energy4.png"
                 alt="Energy in World"
                 width={100}
                 height={100}
@@ -99,13 +100,22 @@ const SustainableEnergy = () => {
                 height={400}
                 className="w-full h-64 object-cover transition-transform group-hover:scale-105"
               />
+
               <div className="absolute inset-0 bg-black/30 bg-opacity-30 flex flex-col justify-end p-6">
                 <h3 className="text-white text-lg font-bold mb-2">
                   {item.title}
                 </h3>
+                <Link
+              href={{
+                pathname: "/products",
+                query: { title: item.title, image: item.image },
+              }}
+              passHref
+            >
                 <button className="text-white font-medium flex items-center gap-2 group-hover:underline">
                   MORE <ArrowRight size={16} />
                 </button>
+                </Link>
               </div>
             </div>
           ))}

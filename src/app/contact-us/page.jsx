@@ -10,13 +10,22 @@ const ContactPage = () => {
     
       <main className="flex-grow">
         {/* Hero Section */}
-        <section
-          className="relative h-96 flex items-center justify-center text-white text-5xl font-bold bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/image2.png')" }}
-        >
-          <div className="absolute inset-0 bg-black bg-opacity-60 z-0"></div>
-          <h1 className="relative z-10">CONTACT US</h1>
-        </section>
+       <section
+  className="relative h-96 flex items-center justify-center text-white text-5xl font-bold bg-cover bg-center"
+  style={{
+    backgroundImage: `url("https://bioenergy.com.pk/wp-content/uploads/2023/10/noah-buscher-x8ZStukS2PM-unsplash-scaled.jpg")`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+  }}
+>
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-black/60 z-0"></div>
+
+  {/* Text */}
+  <h1 className="relative z-10">CONTACT US</h1>
+</section>
+
 
         {/* Contact Info Section */}
         <section className="py-16 bg-gray-100">
