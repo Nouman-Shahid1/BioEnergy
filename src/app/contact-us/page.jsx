@@ -11,7 +11,7 @@ const ContactPage = () => {
       <main className="flex-grow">
         {/* Hero Section */}
        <section
-  className="relative h-96 flex items-center justify-center text-white text-5xl font-bold bg-cover bg-center"
+  className="relative h-[600px] flex items-center justify-center text-white text-5xl font-bold bg-cover bg-center"
   style={{
     backgroundImage: `url("https://bioenergy.com.pk/wp-content/uploads/2023/10/noah-buscher-x8ZStukS2PM-unsplash-scaled.jpg")`,
     backgroundSize: 'cover',

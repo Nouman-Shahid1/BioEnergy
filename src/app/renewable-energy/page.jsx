@@ -8,24 +8,23 @@ const Home = () => {
     <div className="font-inter antialiased text-gray-800 bg-white">
       {/* Hero Section */}
       <section
-  className="relative min-h-screen bg-cover bg-center flex items-center justify-center text-white"
-  style={{
-    backgroundImage:
-      "url('https://bioenergy.com.pk/wp-content/uploads/2023/10/C-scaled.webp')",
-  }}
->
-  {/* Overlay */}
-  <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+        className="relative min-h-screen bg-cover bg-center flex items-center justify-center text-white"
+        style={{
+          backgroundImage:
+            "url('https://bioenergy.com.pk/wp-content/uploads/2023/10/C-scaled.webp')",
+        }}
+      >
+        {/* Overlay */}
+        <div className="absolute inset-0 "></div>
 
-  {/* Hero Content */}
-  <div className="relative z-10 text-center p-4">
-    <h1 className="text-4xl md:text-5xl font-bold mb-4">
-      RENEWABLE ENERGY
-    </h1>
-    <p className="text-xl">Helping World To Grow Sustainably</p>
-  </div>
-</section>
-
+        {/* Hero Content */}
+        <div className="relative z-10 text-center p-4">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            RENEWABLE ENERGY
+          </h1>
+          <p className="text-xl">Helping World To Grow Sustainably</p>
+        </div>
+      </section>
 
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-6 py-16">

@@ -10,42 +10,17 @@ const ProductPage = () => {
     <div className="min-h-screen bg-gray-50 font-inter">
       {/* Hero Section */}
       <section
-        className="relative h-96 bg-cover bg-center"
-        style={{ backgroundImage: "url('https://bioenergy.com.pk/wp-content/uploads/2023/10/C-scaled.webp')" }}
-      >
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-white tracking-wider uppercase">
-            PRODUCTS
-          </h1>
-        </div>
-      </section>
- {/* <section
-  className="relative h-screen bg-cover bg-center"
-  style={{ backgroundImage: "url('')" }}
+  className="relative h-[600px] bg-cover bg-center z-10"
+  style={{
+    backgroundImage: "url('/images/product.png')",
+  }}
 >
-  <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-    <h1 className="text-5xl font-bold text-white uppercase">PRODUCTS</h1>
-  </div>
-</section> */}
-
-
-      {/* <section className="relative h-96 overflow-hidden">
-  <img
-    src="/images/pattren.png"
-    alt="Products Background"
-    className="absolute inset-0 w-full h-full object-cover z-0"
-    onError={(e) => {
-      e.target.onerror = null;
-      e.target.src = "https://placehold.co/1200x400/222/fff?text=PRODUCT+IMAGE";
-    }}
-  />
-  <div className="absolute inset-0 bg-black bg-opacity-50 z-10 flex items-center justify-center">
-    <h1 className="text-5xl md:text-6xl font-bold text-white tracking-wider uppercase z-20">
+  <div className="absolute inset-0 flex items-center justify-center">
+    <h1 className="text-5xl md:text-6xl font-bold text-white tracking-wider uppercase">
       PRODUCTS
     </h1>
   </div>
-</section> */}
-
+</section>
 
       {/* Premium Pellets Section */}
       <section className="container mx-auto px-4 py-16 md:py-24">
@@ -216,5 +191,3 @@ const ProductPage = () => {
 };
 
 export default ProductPage;
-
-
