@@ -1,6 +1,5 @@
 "use client";
-import Image from "next/image";
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import {
   FaPhoneAlt,
   FaLinkedinIn,
@@ -20,6 +19,7 @@ const poppins = Poppins({
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
+  const menuRef = useRef(null);
 
   const navLinks = [
     { name: "About Us", href: "/about-us" },
@@ -27,6 +27,28 @@ const Navbar = () => {
     { name: "Renewable Energy", href: "/renewable-energy" },
     { name: "Contact Us", href: "/contact-us" },
   ];
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setMenuOpen(false);
+      }
+    }
+
+    if (menuOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [menuOpen]);
+
+  const handleLinkClick = () => {
+    setMenuOpen(false);
+  };
 
   return (
     <header className="w-full">
@@ -36,19 +58,19 @@ const Navbar = () => {
           <span>+92 3003316071</span>
         </div>
         <div className="flex space-x-4">
-          <a href="#">
+          <a href="#" aria-label="LinkedIn">
             <FaLinkedinIn />
           </a>
-          <a href="#">
+          <a href="#" aria-label="Facebook">
             <FaFacebookF />
           </a>
-          <a href="#">
+          <a href="#" aria-label="Instagram">
             <FaInstagram />
           </a>
         </div>
       </div>
 
-      <nav className="bg-white shadow-md text-black">
+      <nav className="bg-white shadow-md text-black relative z-50">
         <div className="max-w-7xl mx-auto px-4 md:px-8 py-4 flex justify-between items-center">
           <a href="/" className="flex items-center gap-2 cursor-pointer">
             <img
@@ -60,10 +82,10 @@ const Navbar = () => {
               <h1 className="text-xl font-bold text-black">SINDH BIOENERGY</h1>
               <p className="text-sm text-gray-700">
                 Clean and Cost-Effective Energy Solution
-
               </p>
             </div>
           </a>
+
           <ul
             className={`hidden md:flex space-x-8 text-base font-normal ${poppins.className}`}
           >
@@ -81,31 +103,49 @@ const Navbar = () => {
             ))}
           </ul>
 
-          <div className="md:hidden">
-            <button onClick={() => setMenuOpen(!menuOpen)}>
-              {menuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+          <div className="md:hidden relative z-50">
+            <button
+              aria-label="Toggle menu"
+              onClick={() => setMenuOpen(!menuOpen)}
+              className="text-black hover:text-gray-700 focus:outline-none"
+            >
+              {menuOpen ? <FaTimes size={28} /> : <FaBars size={28} />}
             </button>
           </div>
         </div>
 
-        <ul
-          className={`md:hidden px-4 md:px-8 pb-4 space-y-2 font-medium transition-all duration-300 ease-in-out ${
-            menuOpen ? "block" : "hidden"
-          }`}
+        <div
+          ref={menuRef}
+          className={`
+            fixed top-0 left-0 h-full w-64 bg-white shadow-lg transform transition-transform duration-300 ease-in-out z-40
+            ${menuOpen ? "translate-x-0" : "-translate-x-full"}
+          `}
         >
-          {navLinks.map((link) => (
-            <li key={link.href}>
-              <a
-                href={link.href}
-                className={`block hover:text-green-600 ${
-                  pathname === link.href ? "text-green-600" : ""
-                }`}
-              >
-                {link.name}
-              </a>
-            </li>
-          ))}
-        </ul>
+          <ul
+            className={`flex flex-col mt-20 px-6 space-y-6 font-medium ${poppins.className}`}
+          >
+            {navLinks.map((link) => (
+              <li key={link.href}>
+                <a
+                  href={link.href}
+                  onClick={handleLinkClick}
+                  className={`block capitalize text-lg ${
+                    pathname === link.href ? "text-green-600" : "text-black"
+                  }`}
+                >
+                  {link.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {menuOpen && (
+          <div
+            className="fixed inset-0 z-30"
+            onClick={() => setMenuOpen(false)}
+          />
+        )}
       </nav>
     </header>
   );
