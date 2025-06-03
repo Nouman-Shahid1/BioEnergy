@@ -2,7 +2,7 @@
 # BioEnergy
 =======
 =======
->>>>>>> 330365042d7fa3d05d36557212734bc015cc41f0
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
