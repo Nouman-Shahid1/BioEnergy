@@ -26,6 +26,7 @@ const Navbar = () => {
     { name: "Products", href: "/products" },
     { name: "Renewable Energy", href: "/renewable-energy" },
     { name: "Contact Us", href: "/contact-us" },
+    { name: "Order", href: "/order" },
   ];
 
   useEffect(() => {
