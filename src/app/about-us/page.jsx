@@ -55,9 +55,12 @@ const AboutPage = () => {
         </div>
 
         <div className="relative z-10 flex items-center justify-center h-full">
-          <h1
+          {/* <h1
             className={`text-[113.611px] leading-[113.611px] text-white uppercase text-center tracking-tight ${economica.className}`}
-          >
+          > */}
+          <h1
+  className={`text-4xl md:text-[113.611px] leading-tight md:leading-[113.611px] text-white uppercase text-center tracking-tight font-bold relative z-10 ${economica.className}`}
+>
             ABOUT US
           </h1>
         </div>

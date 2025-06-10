@@ -37,9 +37,9 @@ const ContactPage = () => {
   <div className="absolute inset-0 bg-black/60 z-0"></div>
 
   {/* Text */}
-  <h1 
-  className={`text-[113.611px] leading-[113.611px] text-white uppercase text-center tracking-tight font-bold relative z-10 ${economica.className}`}>
-  
+ <h1
+  className={`text-4xl md:text-[113.611px] leading-tight md:leading-[113.611px] text-white uppercase text-center tracking-tight font-bold relative z-10 ${economica.className}`}
+>  
     CONTACT US</h1>
 </section>
 

@@ -137,7 +137,7 @@ const Footer = () => {
                     className="w-20 h-20 rounded-full object-cover mx-auto"
                   />
                   <p className="text-sm mt-2 font-semibold">Muhammad Ramzan</p>
-                  <p className="text-xs text-gray-400">Resident Director</p>
+                  <p className="text-xs text-gray-400">COO</p>
                 </div>
               </div>
             </div>
