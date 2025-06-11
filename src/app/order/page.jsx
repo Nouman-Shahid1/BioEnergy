@@ -22,7 +22,7 @@ const ContactPage = () => {
       <main className="flex-grow">
         {/* Hero Section */}
         <section
-          className="relative h-[600px] flex items-center justify-center text-white text-5xl font-bold bg-cover bg-center"
+          className="relative h-[400px] sm:h-[500px] md:h-[600px] flex items-center justify-center text-white text-5xl font-bold bg-cover bg-center"
           style={{
             backgroundImage: `url("https://bioenergy.com.pk/wp-content/uploads/2023/10/abstract-creative-3d-sphere-with-vegetation-scaled.jpg")`,
             backgroundSize: "cover",
@@ -34,17 +34,14 @@ const ContactPage = () => {
           <div className="absolute inset-0 bg-black/60 z-0"></div>
 
           {/* Text */}
-          {/* <h1
-            className={`text-[113.611px] leading-[113.611px] text-white uppercase text-center tracking-tight font-bold relative z-10 ${economica.className}`}>
-            ORDER NOW */}
-            <h1
-  className={`text-4xl md:text-[113.611px] leading-tight md:leading-[113.611px] text-white uppercase text-center tracking-tight font-bold relative z-10 ${economica.className}`}
->ORDER NOW
 
+          <h1
+            className={`relative z-10 text-center uppercase tracking-tight text-[4rem] sm:text-[6rem] md:text-[7rem] lg:text-[8rem] leading-tight ${economica.className}`}
+          >
+            ORDER NOW
           </h1>
         </section>
 
-       
         {/* Contact Form Section */}
         <section className="py-16 bg-gradient-to-br from-[#d4fc79] to-[#96e6a1]">
           <div className="max-w-3xl mx-auto px-4">
