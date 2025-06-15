@@ -29,8 +29,9 @@ const ProductPage = () => {
       >
         <div className="absolute inset-0 bg-black/60"></div>
         <div className="absolute inset-0 flex items-center justify-center px-4">
+          
           <h1
-            className={`text-5xl sm:text-6xl md:text-[113.611px] leading-tight text-white uppercase text-center tracking-tight font-bold ${economica.className}`}
+            className={`relative z-10 text-center uppercase tracking-tight text-[4rem] sm:text-[6rem] md:text-[7rem] lg:text-[8rem] leading-tight font-bold ${economica.className} text-white` }
           >
             PRODUCTS
           </h1>

@@ -32,7 +32,7 @@ const Renewable = () => {
         {/* Hero Content */}
         <div className="relative z-10 text-center max-w-5xl">
           <h1
-            className={`text-4xl sm:text-6xl md:text-[113.611px] leading-tight sm:leading-[1.1] md:leading-[113.611px] uppercase tracking-tight font-bold ${economica.className}`}
+            className={`relative z-10 text-center uppercase tracking-tight text-[4rem] sm:text-[6rem] md:text-[7rem] lg:text-[8rem] leading-tight  font-bold ${economica.className}`}
           >
             RENEWABLE ENERGY
           </h1>
