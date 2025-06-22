@@ -9,11 +9,11 @@ const EnergySection = () => {
       <section className="py-16 px-4 sm:px-8 md:px-20 bg-white">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-center">
           {/* Image */}
-          <div className="w-full h-auto rounded-lg overflow-hidden shadow-lg hover:scale-105 transition-transform duration-500 ease-in-out">
+          <div className="w-full h-[380px] sm:h-[400px] md:h-[420px] rounded-lg overflow-hidden shadow-lg hover:scale-105 transition-transform duration-500 ease-in-out">
             <img
-              src="/images/image2.png"
+              src="https://certifiedwastesolutions.com/hubfs/shutterstock_2104511681%20%281%29.jpg"
               alt="Using Organic Waste"
-              className="w-full max-w-full h-auto object-cover"
+              className="w-full max-w-full h-[380px] sm:h-[400px] md:h-[420px] object-cover"
             />
           </div>
 
@@ -64,7 +64,7 @@ const EnergySection = () => {
           {/* Image */}
           <div className="relative w-full h-auto rounded-lg overflow-hidden shadow-lg order-1 md:order-2 hover:scale-105 transition-transform duration-500 ease-in-out">
             <img
-              src="/images/image1.png"
+              src="https://4.imimg.com/data4/CW/ET/MY-9145403/biomass-pellet.jpg"
               alt="Pellets"
               className="w-full max-w-full h-auto object-cover"
             />

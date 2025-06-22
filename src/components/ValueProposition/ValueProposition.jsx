@@ -4,30 +4,30 @@ import React from "react";
 
 const ValueProposition = () => {
   return (
-    <div className="relative min-h-screen w-full overflow-hidden bg-gray-50">
-      {/* Top Section Background */}
-      <div className="absolute top-0 left-0 w-full h-[45vh] sm:h-[40vh] md:h-[35vh] bg-gradient-to-b from-blue-900 via-teal-500 to-teal-500"></div>
+   <div className="relative w-full overflow-hidden bg-gray-50">
+  {/* Top Gradient Background - now larger and separate */}
+  <div className="absolute top-0 left-0 w-full h-[480px] bg-gradient-to-b from-blue-900 via-teal-500 to-teal-500 z-0"></div>
 
-      {/* Content Container */}
-      <div className="container mx-auto relative z-10 py-12 sm:py-16 px-4 sm:px-6 lg:px-8">
-        {/* Value To Customers Section */}
-        <div className="text-center text-white mb-12 sm:mb-16 pt-8 sm:pt-12">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 leading-tight">
-            Value To Customers
-          </h2>
-          <p className="text-base sm:text-lg max-w-2xl mx-auto mb-8 leading-relaxed">
-            Our core objective is to provide our customers with ultimate
-            one-spot solution. We provide clean fuels with reliability, quality,
-            and cost efficiency, Ensuring complete consultancy & lasting support
-            for their customized needs.
-          </p>
-          <a
-            href="#"
-            className="inline-flex items-center font-medium text-green-600 bg-white border border-white px-5 py-3 rounded-md transition-transform duration-300 hover:-translate-y-1 text-sm sm:text-base"
-          >
-            LEARN MORE
-          </a>
-        </div>
+  {/* Main Content Wrapper */}
+  <div className="relative z-10 container mx-auto py-12 sm:py-16 px-4 sm:px-6 lg:px-8">
+    {/* Value To Customers Section */}
+    <div className="text-center text-white mb-12 sm:mb-16 pt-8 sm:pt-12">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 leading-tight">
+        Value To Customers
+      </h2>
+      <p className="text-base sm:text-lg max-w-2xl mx-auto mb-8 leading-relaxed">
+        Our core objective is to provide our customers with ultimate
+        one-spot solution. We provide clean fuels with reliability, quality,
+        and cost efficiency, Ensuring complete consultancy & lasting support
+        for their customized needs.
+      </p>
+      <a
+        href="#"
+        className="inline-flex items-center font-medium text-green-600 bg-white border border-white px-5 py-3 rounded-md transition-transform duration-300 hover:-translate-y-1 text-sm sm:text-base"
+      >
+        LEARN MORE
+      </a>
+    </div>
 
         {/* Feature Cards Section */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12 sm:mb-16">
