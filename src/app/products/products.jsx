@@ -24,7 +24,8 @@ const ProductPage = () => {
       <section
         className="relative h-[400px] sm:h-[500px] md:h-[600px] bg-cover bg-center z-10"
         style={{
-          backgroundImage: "url('/images/product.png')",
+          backgroundImage:
+            "url('https://thumbs.dreamstime.com/b/aerial-view-solitary-wood-chip-pile-sustainable-biomass-fueling-renewable-energy-production-captivating-drone-shot-358037833.jpg?w=768')",
         }}
       >
         <div className="absolute inset-0 bg-black/60"></div>
@@ -42,7 +43,7 @@ const ProductPage = () => {
           {/* Image with overlay text */}
           <div className="relative w-full md:w-1/2 h-[300px] sm:h-[400px] md:h-[500px] overflow-hidden rounded-lg shadow-lg max-w-xl mx-auto">
             <img
-              src="/images/primium.png"
+              src="https://www.awf.com/wp-content/uploads/2021/10/wood-pellets-card-2.jpg"
               alt="Premium Pellets"
               className="w-full h-full object-cover"
               onError={(e) => {
@@ -141,7 +142,7 @@ const ProductPage = () => {
               <img
                 src="/images/commercial burners.png"
                 alt="Commercial Burners"
-                className="w-full h-full object-cover rounded-lg max-h-[300px] sm:max-h-[400px]"
+                className="w-full h-full object-contain rounded-lg max-h-[300px] sm:max-h-[400px]"
                 onError={(e) => {
                   e.target.onerror = null;
                   e.target.src =
@@ -171,7 +172,7 @@ const ProductPage = () => {
               <img
                 src="/images/ind burner.jpg"
                 alt="Industrial Burners"
-                className="w-full h-full object-cover rounded-lg max-h-[300px] sm:max-h-[400px]"
+                className="w-full h-full object-fit rounded-lg max-h-[300px] sm:max-h-[400px]"
                 onError={(e) => {
                   e.target.onerror = null;
                   e.target.src =
