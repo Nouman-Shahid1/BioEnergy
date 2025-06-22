@@ -29,9 +29,8 @@ const ProductPage = () => {
       >
         <div className="absolute inset-0 bg-black/60"></div>
         <div className="absolute inset-0 flex items-center justify-center px-4">
-          
           <h1
-            className={`relative z-10 text-center uppercase tracking-tight text-[4rem] sm:text-[6rem] md:text-[7rem] lg:text-[8rem] leading-tight font-bold ${economica.className} text-white` }
+            className={`relative z-10 text-center uppercase tracking-tight text-[4rem] sm:text-[6rem] md:text-[7rem] lg:text-[8rem] leading-tight font-bold ${economica.className} text-white`}
           >
             PRODUCTS
           </h1>
@@ -90,10 +89,10 @@ const ProductPage = () => {
             transition={{ duration: 1.2, ease: "easeOut" }}
             className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-center text-gray-800 mb-12 md:mb-16 px-4"
           >
-            DOMESTIC COMMERCIAL{" "}
+            FLEXIBLE ENERGY SYSTEM{" "}
             <span className="text-green-600">
               <Typewriter
-                words={["AND INDUSTRIAL SOLUTIONS"]}
+                words={["FOR ALL ENVIRONMENTS"]}
                 loop={0}
                 cursor
                 cursorStyle="|"

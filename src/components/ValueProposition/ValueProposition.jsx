@@ -152,7 +152,7 @@ const ValueProposition = () => {
           {/* Right Column: Text */}
           <div className="text-gray-800 px-4 sm:px-0">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-green-600 leading-tight">
-              Helping World To Grow Sustainably
+              Empowering a Greener, Smarter Future
             </h2>
             <p className="text-base sm:text-lg leading-relaxed">
               We are making clean and affordable energy ensuring responsible

@@ -21,7 +21,7 @@ const EnergySection = () => {
           <div className="text-left px-2 sm:px-0">
             <hr className="w-20 border-4 border-green-500 mb-6 rounded" />
             <h2 className="text-3xl sm:text-4xl font-extrabold text-green-600 mb-6 leading-tight">
-              Using Organic Waste To Generate Energy
+              Turning Organic Waste into Renewable Power
             </h2>
             <p className="text-gray-700 text-base sm:text-lg mb-8 max-w-xl leading-relaxed">
               Our products are 100% natural, made from pure agriculture, bio,
@@ -43,7 +43,7 @@ const EnergySection = () => {
           <div className="text-left px-2 sm:px-0 order-2 md:order-1">
             <hr className="w-20 border-4 border-green-500 mb-6 rounded" />
             <h2 className="text-3xl sm:text-4xl font-extrabold text-green-600 mb-6 leading-tight">
-              Premium Pellets
+              High-Efficiency Biomass Pellets
             </h2>
             <p className="text-gray-700 text-base sm:text-lg mb-8 max-w-xl leading-relaxed">
               Woodi Pellets stand at the forefront of renewable energy

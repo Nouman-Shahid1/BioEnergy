@@ -9,7 +9,7 @@ const SustainableEnergy = () => {
       <div className="flex flex-col md:flex-row items-center justify-between gap-10 p-6 md:p-10 bg-white">
         <div className="flex-1 max-w-full md:max-w-[600px]">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-green-600 mb-8 md:mb-10">
-            Driving The Future Of Sustainable Energy
+            Empowering the Planet with Smart Energy Solutions
           </h2>
 
           <div className="flex flex-wrap gap-8 md:gap-12 justify-center md:justify-start">
@@ -74,7 +74,7 @@ const SustainableEnergy = () => {
 
       <section className="px-5 md:px-20 py-16 bg-gradient-to-t from-green-50 to-white">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-green-600 mb-12 border-l-4 border-green-500 pl-4 max-w-4xl mx-auto">
-          Domestic Commercial And Industrial Solutions
+          Flexible Energy Systems for All Environments
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-10 max-w-7xl mx-auto">
