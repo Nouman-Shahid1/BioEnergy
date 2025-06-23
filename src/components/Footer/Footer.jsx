@@ -25,7 +25,7 @@ const Footer = () => {
             {/* Section 1: Company Info */}
             <div className="space-y-4">
               <div className="flex items-center">
-                <span className="text-2xl font-bold">SINDH BIOENERGY</span>
+                <span className="text-2xl font-bold">SINDH BIO ENERGY</span>
               </div>
               <p className="text-[#a3c93c] font-medium">
                 Clean Heat Energy Solutions
@@ -127,7 +127,7 @@ const Footer = () => {
                     alt="Founder"
                     className="w-20 h-20 rounded-full object-cover mx-auto"
                   />
-                  <p className="text-sm mt-2 font-semibold">Arif Ali Kazmi </p>
+                  <p className="text-sm mt-2 font-semibold">Syed Arif Ali Kazmi </p>
                   <p className="text-xs text-gray-400">CEO</p>
                 </div>
                 <div className="text-center">

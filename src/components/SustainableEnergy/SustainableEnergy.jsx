@@ -79,7 +79,7 @@ const SustainableEnergy = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-10 max-w-7xl mx-auto">
           {[
-            { title: "DOMESTIC STOVES", image: "/images/Domestic Stove.jpg" },
+            { title: "DOMESTIC STOVES", image: "/images/Domestic Stove1.jpg" },
             {
               title: "COMMERCIAL BURNERS",
               image: "/images/commercial burners.png",

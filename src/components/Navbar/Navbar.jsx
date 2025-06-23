@@ -80,7 +80,7 @@ const Navbar = () => {
               className="h-16 w-auto"
             />
             <div className="leading-tight">
-              <h1 className="text-xl font-bold text-black">SINDH BIOENERGY</h1>
+              <h1 className="text-xl font-bold text-black">SINDH BIO ENERGY</h1>
               <p className="text-sm text-gray-700">
                 Clean and Cost-Effective Energy Solution
               </p>

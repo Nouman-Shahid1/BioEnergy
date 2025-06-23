@@ -108,7 +108,7 @@ const ProductPage = () => {
           <div className="flex flex-col md:flex-row items-center md:space-x-12 mb-12 md:mb-16 px-4">
             <div className="w-full md:w-1/2 mb-6 md:mb-0 rounded-lg overflow-hidden shadow-lg max-h-[300px] sm:max-h-[400px]">
               <img
-                src="/images/Domestic Stove.jpg"
+                src="/images/Domestic Stove1.jpg"
                 alt="Domestic Stoves"
                 className="w-full h-full object-cover rounded-lg max-h-[300px] sm:max-h-[400px]"
                 onError={(e) => {

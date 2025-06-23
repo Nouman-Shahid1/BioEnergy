@@ -118,7 +118,7 @@ const AboutPage = () => {
           <p
             className={`text-white text-sm sm:text-base font-medium leading-[1.7] mb-6 ${poppins.className}`}
           >
-            Pak Bioenergy is a mass producer of biomass fuels...
+            Sindh Bio Energy is a mass producer of biomass fuels...
           </p>
           <p
             className={`text-white text-sm sm:text-base font-medium leading-[1.7] ${poppins.className}`}
