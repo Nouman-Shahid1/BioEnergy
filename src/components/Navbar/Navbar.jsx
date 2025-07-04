@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useState, useEffect, useRef } from "react";
 import {
   FaPhoneAlt,
@@ -17,16 +18,19 @@ const poppins = Poppins({
 });
 
 const Navbar = () => {
+  const [showModal, setShowModal] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
   const menuRef = useRef(null);
 
   const navLinks = [
     { name: "About Us", href: "/about-us" },
-    // { name: "Products", href: "/products" },
-    // { name: "Renewable Energy", href: "/renewable-energy" },
-    // { name: "Contact Us", href: "/contact-us" },
-    // { name: "Order", href: "/order" },
+    { name: "Products", href: "/products" },
+    { name: "Renewable Energy", href: "/renewable-energy" },
+    // { name: "Update", href: "/update" },
+    { name: "Contact Us", href: "/contact-us" },
+    { name: "Order", href: "/order" },
+    { name: "New Project", href: null },
   ];
 
   useEffect(() => {
@@ -90,7 +94,7 @@ const Navbar = () => {
           <ul
             className={`hidden md:flex space-x-8 text-base font-normal ${poppins.className}`}
           >
-            {navLinks.map((link) => (
+            {/* {navLinks.map((link) => (
               <li key={link.href}>
                 <a
                   href={link.href}
@@ -100,6 +104,28 @@ const Navbar = () => {
                 >
                   {link.name}
                 </a>
+              </li>
+            ))} */}
+
+            {navLinks.map((link) => (
+              <li key={link.name}>
+                {link.href ? (
+                  <a
+                    href={link.href}
+                    className={`capitalize transition-colors duration-200 ${
+                      pathname === link.href ? "text-green-600" : "text-black"
+                    }`}
+                  >
+                    {link.name}
+                  </a>
+                ) : (
+                  <button
+                    onClick={() => setShowModal(true)}
+                    className="capitalize text-red-600 font-semibold hover:underline"
+                  >
+                    {link.name}
+                  </button>
+                )}
               </li>
             ))}
           </ul>
@@ -125,7 +151,7 @@ const Navbar = () => {
           <ul
             className={`flex flex-col mt-20 px-6 space-y-6 font-medium ${poppins.className}`}
           >
-            {navLinks.map((link) => (
+            {/* {navLinks.map((link) => (
               <li key={link.href}>
                 <a
                   href={link.href}
@@ -137,7 +163,30 @@ const Navbar = () => {
                   {link.name}
                 </a>
               </li>
-            ))}
+            ))} */}
+
+            {navLinks.map((link) => (
+  <li key={link.name}>
+    {link.name === "New Project" ? (
+      <button
+        onClick={() => setShowModal(true)}
+        className="capitalize text-black transition-all duration-300 hover:text-lg hover:font-semibold"
+      >
+        {link.name}
+      </button>
+    ) : (
+      <a
+        href={link.href}
+        className={`capitalize transition-colors duration-200 ${
+          pathname === link.href ? "text-green-600" : "text-black"
+        }`}
+      >
+        {link.name}
+      </a>
+    )}
+  </li>
+))}
+
           </ul>
         </div>
 
@@ -148,6 +197,20 @@ const Navbar = () => {
           />
         )}
       </nav>
+      {showModal && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-[999]">
+          <div className="bg-white p-6 rounded-lg shadow-lg w-11/12 sm:w-96">
+            <h2 className="text-xl font-bold mb-4 text-black">New Project</h2>
+            <p className="text-black">COMING SOON.</p>
+            <button
+              onClick={() => setShowModal(false)}
+              className="mt-4 px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     </header>
   );
 };
