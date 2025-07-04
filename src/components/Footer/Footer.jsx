@@ -75,10 +75,22 @@ const Footer = () => {
                   Renewable Energy
                 </Link>
                 <Link
+                  href="/update"
+                  className="text-sm hover:text-gray-300 transition-colors"
+                >
+                  Update
+                </Link>
+                <Link
                   href="/contact-us"
                   className="text-sm hover:text-gray-300 transition-colors"
                 >
                   Contact Us
+                </Link>
+                <Link
+                  href="/order"
+                  className="text-sm hover:text-gray-300 transition-colors"
+                >
+                  Order
                 </Link>
               </div>
             </div>
@@ -91,7 +103,7 @@ const Footer = () => {
               </h3>
               <div className="flex space-x-4">
                 <a
-                  href="https://facebook.com"
+                  href="https://www.facebook.com/share/16w16vRHqJ/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-[#a3c93c] transition-colors"
@@ -99,7 +111,7 @@ const Footer = () => {
                   <FaFacebookF className="w-6 h-6" />
                 </a>
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/sindhbioenergy/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-[#a3c93c] transition-colors"
@@ -107,7 +119,7 @@ const Footer = () => {
                   <FaInstagram className="w-6 h-6" />
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/company/sindh-bio-energy/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-[#a3c93c] transition-colors"

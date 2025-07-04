@@ -27,7 +27,7 @@ const Navbar = () => {
     { name: "About Us", href: "/about-us" },
     { name: "Products", href: "/products" },
     { name: "Renewable Energy", href: "/renewable-energy" },
-    // { name: "Update", href: "/update" },
+    { name: "Update", href: "/update" },
     { name: "Contact Us", href: "/contact-us" },
     { name: "Order", href: "/order" },
     { name: "New Project", href: null },
@@ -63,13 +63,13 @@ const Navbar = () => {
           <span>+92 3003316071</span>
         </div>
         <div className="flex space-x-4">
-          <a href="#" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/company/sindh-bio-energy/" aria-label="LinkedIn">
             <FaLinkedinIn />
           </a>
-          <a href="#" aria-label="Facebook">
+          <a href="https://www.facebook.com/share/16w16vRHqJ/" aria-label="Facebook">
             <FaFacebookF />
           </a>
-          <a href="#" aria-label="Instagram">
+          <a href="https://www.instagram.com/sindhbioenergy/" aria-label="Instagram">
             <FaInstagram />
           </a>
         </div>
