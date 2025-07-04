@@ -46,7 +46,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center text-sm mt-2">
                 <FaEnvelope className="mr-2" />
-                <span>Sindhbioenergy.pk@gmail.com</span>
+                <span>info@sindbioenergy.com</span>
               </div>
             </div>
 

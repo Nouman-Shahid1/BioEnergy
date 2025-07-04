@@ -23,10 +23,10 @@ const Navbar = () => {
 
   const navLinks = [
     { name: "About Us", href: "/about-us" },
-    { name: "Products", href: "/products" },
-    { name: "Renewable Energy", href: "/renewable-energy" },
-    { name: "Contact Us", href: "/contact-us" },
-    { name: "Order", href: "/order" },
+    // { name: "Products", href: "/products" },
+    // { name: "Renewable Energy", href: "/renewable-energy" },
+    // { name: "Contact Us", href: "/contact-us" },
+    // { name: "Order", href: "/order" },
   ];
 
   useEffect(() => {
