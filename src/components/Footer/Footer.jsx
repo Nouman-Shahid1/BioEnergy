@@ -103,7 +103,7 @@ const Footer = () => {
               </h3>
               <div className="flex space-x-4">
                 <a
-                  href="https://www.facebook.com/share/16w16vRHqJ/"
+                  href="https://www.facebook.com/share/1B7MxP4dkF/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-[#a3c93c] transition-colors"

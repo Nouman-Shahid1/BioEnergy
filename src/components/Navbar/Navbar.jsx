@@ -66,7 +66,7 @@ const Navbar = () => {
           <a href="https://www.linkedin.com/company/sindh-bio-energy/" aria-label="LinkedIn">
             <FaLinkedinIn />
           </a>
-          <a href="https://www.facebook.com/share/16w16vRHqJ/" aria-label="Facebook">
+          <a href="https://www.facebook.com/share/1B7MxP4dkF/" aria-label="Facebook">
             <FaFacebookF />
           </a>
           <a href="https://www.instagram.com/sindhbioenergy/" aria-label="Instagram">
