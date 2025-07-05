@@ -78,7 +78,7 @@ const Footer = () => {
                   href="/update"
                   className="text-sm hover:text-gray-300 transition-colors"
                 >
-                  Update
+                  Updates
                 </Link>
                 <Link
                   href="/contact-us"

@@ -27,7 +27,7 @@ const Navbar = () => {
     { name: "About Us", href: "/about-us" },
     { name: "Products", href: "/products" },
     { name: "Renewable Energy", href: "/renewable-energy" },
-    { name: "Update", href: "/update" },
+    { name: "Updates", href: "/update" },
     { name: "Contact Us", href: "/contact-us" },
     { name: "Order", href: "/order" },
     { name: "New Project", href: null },
