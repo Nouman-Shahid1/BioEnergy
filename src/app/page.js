@@ -5,6 +5,7 @@ import HeroSection from "@/components/HeroSection/HeroSection";
 import SustainableSection from "@/components/SustainableSection/SustainableSection";
 import SustainableEnergy from "@/components/SustainableEnergy/SustainableEnergy";
 import ValueProposition from "@/components/ValueProposition/ValueProposition";
+import SEO from "@/components/SEO";
 export const generateMetadata = () => ({
   title:
     "Bio Energy – Fulfill your heat energy demand reliably and efficiently",
@@ -13,6 +14,11 @@ export const generateMetadata = () => ({
 export default function Home() {
   return (
     <>
+    <SEO
+        title="Home | sindh bio energy"
+        description="Sindh bio energy is biomass power plant in sindh operating under pakistan's Renewable energy policy."
+        keywords="sindh bio energy, pak energy, bio fuel, sindh fuel, wood pellets, sindh bio energy tando muhammad khan, pellets in pakistan, biomass energy pakistan, renewabdle energy, alternative to gas, wood pellets for boiler, sustainable fuel, boiler fuel wood pellets, clean energy for businesses, industrial heating source, gas, lpg, wood pellets kha se mily gy, gas loadshedding, where to buy wood pellets in sindh, how to save energy in factories,"
+      />
       <HeroSection />
       <EnergySection />
       <SustainableSection />

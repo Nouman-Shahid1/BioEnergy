@@ -9,6 +9,7 @@ import hala from "../../../public/images/hala.png";
 import production from "../../../public/images/production.png";
 import benefit from "../../../public/images/benefit.png";
 import project from "../../../public/images/project.jpg";
+import SEO from "@/components/SEO";
 
 import dynamic from "next/dynamic";
 const oxygen = Oxygen({
@@ -45,6 +46,11 @@ const UpdatePage = () => {
 
   return (
     <>
+      <SEO
+  title="Our Products | Sindh Bio Energy"
+  description="Explore our eco-friendly bioenergy products like wood pellets and biomass fuel. Perfect for industrial heating and sustainable energy solutions in Pakistan."
+  keywords="wood pellets pakistan, biomass fuel, bioenergy products, industrial heating fuel, clean fuel alternative, sindh wood fuel, boiler fuel, لکڑی کی گولیاں, بایوماس فیول, متبادل ایندھن, صنعتی ایندھن, صاف توانائی کے حل, سندھ میں لکڑی کا ایندھن"
+/>
       <section className="relative h-[60vh] sm:h-[70vh] md:h-[78vh] w-full overflow-hidden">
         <div className="absolute inset-0 z-0">
           {slides.map((src, index) => (

@@ -6,6 +6,8 @@ import sustain from "../../../public/images/C-scaled.png";
 import handshake from "../../../public/images/handshake.png";
 import Footer from "@/components/Footer/Footer";
 import dynamic from "next/dynamic";
+
+import SEO from "@/components/SEO";
 const oxygen = Oxygen({
   subsets: ["latin"],
   weight: ["400", "700"],
@@ -40,6 +42,11 @@ const AboutPage = () => {
 
   return (
     <>
+     <SEO
+        title="About Us | Sindh Bio Energy"
+        description="Learn more about Sindh Bio Energy – a clean energy company using sustainable biomass fuel to reduce dependency on gas and LPG."
+        keywords="about sindh bio energy, clean energy pakistan, biomass fuel company, alternative to gas, renewable energy sindh, سندھ بایو انرجی, صاف توانائی, بایوماس فیول, لکڑی کی گولیاں, سندھ میں گیس کا متبادل, بایو انرجی کمپنی, متبادل ایندھن , wood pellets supplier"
+      />
       <section className="relative h-[60vh] sm:h-[70vh] md:h-[78vh] w-full overflow-hidden">
         <div className="absolute inset-0 z-0">
           {slides.map((src, index) => (

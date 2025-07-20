@@ -3,6 +3,7 @@ import React from "react";
 import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 import Footer from "@/components/Footer/Footer";
 import { Economica, Poppins, Oxygen } from "next/font/google";
+import SEO from "@/components/SEO";
 
 const oxygen = Oxygen({
   subsets: ["latin"],
@@ -18,6 +19,12 @@ const economica = Economica({ subsets: ["latin"], weight: ["400", "700"] });
 
 const ContactPage = () => {
   return (
+    <>
+      <SEO
+  title="Our Products | Sindh Bio Energy"
+  description="Explore our eco-friendly bioenergy products like wood pellets and biomass fuel. Perfect for industrial heating and sustainable energy solutions in Pakistan."
+  keywords="wood pellets pakistan, biomass fuel, bioenergy products, industrial heating fuel, clean fuel alternative, sindh wood fuel, boiler fuel, لکڑی کی گولیاں, بایوماس فیول, متبادل ایندھن, صنعتی ایندھن, صاف توانائی کے حل ,"
+/>
     <div className="flex flex-col min-h-screen">
       <main className="flex-grow">
         {/* Hero Section */}
@@ -120,6 +127,7 @@ const ContactPage = () => {
       {/* Footer */}
       <Footer />
     </div>
+    </>
   );
 };
 

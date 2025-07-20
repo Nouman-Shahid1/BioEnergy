@@ -1,6 +1,7 @@
 "use client";
 import Footer from "@/components/Footer/Footer";
 import React from "react";
+import SEO from "@/components/SEO";
 import { Economica, Poppins, Oxygen } from "next/font/google";
 
 const oxygen = Oxygen({
@@ -18,6 +19,12 @@ const economica = Economica({ subsets: ["latin"], weight: ["400", "700"] });
 // Main Renewable component
 const Renewable = () => {
   return (
+    <>
+      <SEO
+  title="Our Products | Sindh Bio Energy"
+  description="Explore our eco-friendly bioenergy products like wood pellets and biomass fuel. Perfect for industrial heating and sustainable energy solutions in Pakistan."
+  keywords="wood pellets pakistan, biomass fuel, bioenergy products, clean fuel alternative, sindh wood fuel, boiler fuel, لکڑی کی گولیاں, بایوماس فیول, متبادل ایندھن, صنعتی ایندھن, صاف توانائی کے حل, سندھ میں لکڑی کا ایندھن"
+/>
     <div className="font-inter antialiased text-gray-800 bg-white">
       <section
         className="relative min-h-[60vh] sm:min-h-[70vh] md:min-h-screen bg-cover bg-center flex items-center justify-center text-white px-4 sm:px-8"
@@ -185,6 +192,7 @@ const Renewable = () => {
 
       <Footer />
     </div>
+    </>
   );
 };
 
