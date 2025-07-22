@@ -49,7 +49,7 @@ const UpdatePage = () => {
       <SEO
   title="Our Products | Sindh Bio Energy"
   description="Explore our eco-friendly bioenergy products like wood pellets and biomass fuel. Perfect for industrial heating and sustainable energy solutions in Pakistan."
-  keywords="wood pellets pakistan, biomass fuel, bioenergy products, industrial heating fuel, clean fuel alternative, sindh wood fuel, boiler fuel, لکڑی کی گولیاں, بایوماس فیول, متبادل ایندھن, صنعتی ایندھن, صاف توانائی کے حل, سندھ میں لکڑی کا ایندھن"
+  keywords="wood pellets pakistan, biomass fuel, energybi, sindhu pradeep, bioenrgy coe, sindhu jose, biofuels, bioenergy products, industrial heating fuel, clean fuel alternative, sindh wood fuel, boiler fuel, لکڑی کی گولیاں, بایوماس فیول, متبادل ایندھن, صنعتی ایندھن, صاف توانائی کے حل, سندھ میں لکڑی کا ایندھن"
 />
       <section className="relative h-[60vh] sm:h-[70vh] md:h-[78vh] w-full overflow-hidden">
         <div className="absolute inset-0 z-0">
