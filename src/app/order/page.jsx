@@ -23,7 +23,7 @@ const ContactPage = () => {
       <SEO
   title="Our Products | Sindh Bio Energy"
   description="Explore our eco-friendly bioenergy products like wood pellets and biomass fuel. Perfect for industrial heating and sustainable energy solutions in Pakistan."
-  keywords="wood pellets pakistan, biomass fuel, bioenergy products, industrial heating fuel, clean fuel alternative, sindh wood fuel, boiler fuel, لکڑی کی گولیاں, بایوماس فیول, متبادل ایندھن, صنعتی ایندھن, صاف توانائی کے حل ,"
+  keywords="wood pellets pakistan, biomass fuel, bioenergy products, industrial heating fuel, clean fuel alternative, sindh wood fuel, boiler fuel, hyderabad, karachi wood pellets, لکڑی کی گولیاں, بایوماس فیول, متبادل ایندھن, صنعتی ایندھن, صاف توانائی کے حل ,"
 />
     <div className="flex flex-col min-h-screen">
       <main className="flex-grow">
